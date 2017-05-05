@@ -19,7 +19,7 @@ public class DatabaseCurrencyRateProvider implements CurrencyRateProvider {
 		BigDecimal rate = currencyRateDao.getRate(currency, rateDate);
 		CurrencyRate currencyRate = currencyRateDao.getRateInfo(currency, rateDate);
 		System.out.println(currencyRate);
-		System.out.println("DatabaseCurrencyRateProvider: Database loaded rate= "+rate);
+		System.out.println("DatabaseCurrencyRateProvider: Database loaded rate = "+rate);
 		return rate;
 	}
 }
